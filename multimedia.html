@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Multimedia </title>
+
+        <style>
+            body{
+                background-color: blanchedalmond;
+            }
+
+            h1{
+                text-align: center;
+                color: crimson;
+                background-color: lightgrey;
+                margin: -10px;
+            }
+
+            .multiVideo{                
+                text-align:  center;
+            }
+
+            
+
+        </style>
+    </head>
+
+    <body>
+        <h1> Multimedia </h1>
+        <p>
+            The controls attribute adds video controls, like play, pause, and volume. <br>
+
+            It is a good idea to always include width and height attributes. <br>
+            
+            If height and width are not set, the page might flicker while the video loads. <br>
+
+            The source element allows you to specify alternative video files which the browser may choose from. <br>
+            
+            The browser will use the first recognized format. <br>
+
+            The text between the video tag will only be displayed in browsers that do not support the video element. <br> <br>
+        </p>
+
+        <div class="multiVideo">
+            <video width="320" height="240" controls>
+                <source src="multimediaSunset.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <audio controls>  
+            <source src="multimediaAudio.mp3" type="audio/mpeg">
+        </audio
+    </body>
+</html>

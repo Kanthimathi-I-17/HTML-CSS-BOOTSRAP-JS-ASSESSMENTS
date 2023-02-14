@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Login Page</title>
+
+        <style>
+            body{
+                background-color: beige;
+            }
+
+            h1{
+                font-weight: bold;
+                font-style: inherit;
+                font-family: 'Times New Roman', Times, serif;
+            }
+
+            .mainContainer{
+                border: 3px solid black;
+                background-attachment: fixed;
+                background-color: whitesmoke;
+            }
+
+            .imageContainer{
+                text-align: center;
+                margin: 24px 0 12px 0;
+            }
+
+            .imageContainer img{
+                height: 150px;
+                width: 150px;
+                border-radius: 70%;
+            }
+
+            .loginContainer{
+                margin-left: 30px;
+            }
+
+            input[type=text], input[type=password] {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+
+            button {
+                
+                background-color: grey;
+                color: white;
+                padding: 14px 20px;
+                margin-left: 550px;
+                border: none;
+                border-radius: 12px;
+                cursor: pointer;
+            }   
+
+            button:hover {
+                opacity: 0.8;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <h1>
+            Login Page
+        </h1>
+
+        <div class="mainContainer">
+
+            <div class="imageContainer">
+                <img src="login pic.png" alt="login pic">
+            </div>
+
+            <div class="loginContainer">
+
+                <label for="uname"> <b> User Name </b> </label> <br>
+                <input type="text" placeholder="Enter Username" name="uname" required> <br> <br>
+
+                <label for="pwd"> <b> Password </b> </label> <br>
+                <input type="password" name="pword" placeholder="Enter Password"> <br> <br>
+
+                <button type="submit"> Login </button>
+
+            </div>
+
+            <br><br>
+
+        </div>
+        
+    </body>
+</html>
