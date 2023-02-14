@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<!-- Write a javascript program to create the Class for an Employee, 
+    get the details of 10 Employees values(id, name, dept, designation, salary)  from HTML controls 
+    using the getter method and display the details on another page with a table format named as View 
+    Employee details with Edit and Delete option as Hyperlink and it should be redirected to the appropriate page.
+-->
+
+<html>
+    <head>
+        <title> Employee | Home </title>
+
+        <style>
+            body{
+                background-color: aliceblue;
+            }
+            .setTable table{
+                border: 2px solid;
+            }
+            .displayTable table{
+                border: 2px solid;
+                border-collapse: collapse;
+                margin-left: 500px;
+            }
+            .displayTable tr{
+                border: 2px solid;
+            }
+            .displayTable td{
+                border: 2px solid;
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="setTable">
+            <center>
+                <h1> Employee Details</h1>
+                <table>
+                    <tr>
+                        <td><label for="">ID: </label></td>
+                        <td><input type="text" id="empID"></td>
+                    </tr>
+    
+                    <tr>
+                        <td><label for="">Name: </label></td>
+                        <td><input type="text" id="empName"></td>
+                    </tr>
+    
+                    <tr>
+                        <td><label for="">Department: </label></td>
+                        <td><input type="text" id="empDept"></td>
+                    </tr>
+    
+                    <tr>
+                        <td><label for="">Designation: </label></td>
+                        <td><input type="text" id="empDes"></td>
+                    </tr>
+    
+                    <tr>
+                        <td><label for="">Salary: </label></td>
+                        <td><input type="number" id="empSal"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <center>
+                                <a><input type="submit" name="" id="" style="cursor: pointer;" onclick="Employee()"></a>
+                            </center>
+                        </td>
+                    </tr>
+                </table>
+            </center>           
+        </div> <br> <br>
+        <div class="displayTable">
+            <!-- <p id="display"></p> -->
+            <table>
+                <tr>
+                    <td>ID</td>
+                    <td>Name</td>
+                    <td>Department</td>
+                    <td>Designation</td>
+                    <td>Salary</td>
+                </tr>
+                <tr>
+                    <td id="empID1"></td>
+                    <td id="empName1"></td>
+                    <td id="empDept1"></td>
+                    <td id="empDesg1"></td>
+                    <td id="empSal1"></td>
+                </tr>
+            </table>
+        </div>
+        <script>
+            function Employee(){
+                var id = document.getElementById("empID").value;
+                var name = document.getElementById("empName").value;
+                var dept = document.getElementById("empDept").value;
+                var desg = document.getElementById("empDes").value;
+                var sal = document.getElementById("empSal").value;
+
+                // var str = "ID: " + id + "Name: " + name + "Dept:" + dept + "Desgination: " + desg + "Salary: " + sal ;
+                // document.getElementById("display").innerHTML = str;
+                document.getElementById("empID1").innerHTML=id;
+                document.getElementById("empName1").innerHTML=name;
+                document.getElementById("empDept1").innerHTML=dept;
+                document.getElementById("empDesg1").innerHTML=desg;
+                document.getElementById("empSal1").innerHTML=sal;
+            }
+        </script>
+    </body>
+
+</html>

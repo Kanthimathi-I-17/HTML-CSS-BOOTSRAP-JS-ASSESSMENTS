@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--4. Design a button with caption Resize, when you click that button it resizes the  image size.-->
+
+<html>
+    <head>
+        <title> Image resize in button</title>
+        <style>
+            body{
+                background-color: darkblue;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <img src="foodIcon1.png" id="myimg" height="50%" width="50%">
+            <br> <br>
+            <button>Resize</button>
+        </center>
+        <script>
+            document.querySelector('button').onclick = function(){
+                var i = document.getElementById('myimg');
+                i.style.height = '300px';
+                i.style.width =  '300px';
+            }
+        </script>
+    </body>
+</html>

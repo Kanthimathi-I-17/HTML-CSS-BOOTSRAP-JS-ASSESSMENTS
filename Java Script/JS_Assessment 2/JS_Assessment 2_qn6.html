@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Application Form with confirm </title>
+
+        <style>
+
+            body{
+                background-color: khaki;
+            }
+
+            h1{
+                text-align: center;
+            }
+
+            .PD{
+                margin-top: 30px;
+                margin-left: 75px;
+                margin-right: 100px;
+            }
+
+            .pdTable1{
+                float: left;
+                /* margin: 5px; */
+                width: 50%;
+            }
+
+            .pdTable1 td{
+                padding: 10px;
+            }
+
+            .pdTable2{
+                float: right;
+                width: 50%;
+                
+            }
+
+            .pdTable2 td{
+                padding: 10px;
+            }
+
+            .CD{
+                margin-top: 30px;
+                margin-left: 75px;
+                margin-right: 100px;
+            }
+            .cdTable1{
+                float: left;
+                width: 50%;
+            }
+
+            .cdTable1 td{
+                padding: 10px;
+            }
+
+            .cdTable2 {
+                float: right;
+                width: 50%;
+            }
+
+            .cdTable2 td{
+                padding: 10px;
+            }
+
+            .QD{
+                margin-top: 30px;
+                margin-left: 75px;
+                margin-right: 100px;
+            }
+
+            .qdTable1 table{
+                    width: 100%;
+            }
+
+            .qdTable1 td{
+                padding: 10px;
+            }
+
+            .LK{
+                margin-top: 30px;
+                margin-left: 75px;
+                margin-right: 100px;
+            }
+
+            .lkTable1 input[type=checkbox]{
+                width: 300px;
+            }
+
+            .lkTable1 td{
+                padding: 5px;
+            }
+
+            .ID{
+                margin-top: 30px;
+                margin-left: 75px;
+                margin-right: 100px;
+            }
+
+            .idTable1{
+                float: left;
+                width: 50%;
+            }
+
+            .idTable1 td{
+                padding: 10px;
+            }
+
+            .idTable2{
+                float: right;
+                width: 50%;
+            }
+
+            .idTable2 td{
+                padding: 10px;
+            }
+
+            .SaB{
+                text-align: center;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <h1> APPLICATION FORM </h1>
+        <!--Personal Details-->
+        <div class="PD">
+            <fieldset>
+                <legend>  <b> Personal Details &nbsp; </b> </legend>
+
+                <div class="pdTable1">
+                    <table>
+                        <tr>
+                            <td> Applicant's full Name</td>
+                            <td> 
+                                <select name="AFM">
+                                    <option value=""> --Select-- </option>
+                                    <option value=""> Mr. </option>
+                                    <option value=""> Ms. </option>
+                                    <option value=""> Mrs. </option>
+                                </select>
+    
+                                <input type="text" name="" id=""> 
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td> Father's Name</td>
+                            <td> 
+                                <select name="FAN">
+                                    <option value=""> --Select-- </option>
+                                    <option value=""> Mr. </option>
+                                </select>
+    
+                                <input type="text" name="" id="">
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td> Gender </td>
+    
+                            <td>
+                                <label for="M"> Male </label>
+                                <input type="radio" name="GD">
+                
+                                <label for="F"> Female </label>
+                                <input type="radio" name="GD">
+            
+                                <label for="O"> Others </label>
+                                <input type="radio" name="GD">
+                            </td>
+    
+                        </tr>
+    
+                        <tr>
+                            <td> Marital Status </td>
+    
+                            <td>
+                                <select name="MS">
+                                    <option value=""> --Select-- </option>
+                                    <option value=""> Married </option>
+                                    <option value=""> Widowed </option>
+                                    <option value=""> Separated </option>
+                                    <option value=""> Divorced </option>
+                                    <option value=""> Single </option>
+                                    option value=""> Not to Disclose </option>
+                                </select>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td> Handicapped </td>
+    
+                            <td>
+                                <label for="HN">No</label>
+                                <input type="radio" name="HC">
+                
+                                <label for="HY">Yes</label>
+                                <input type="radio" name="HC">
+                            </td>
+                        </tr>
+    
+                    </table>
+                </div>
+
+                <div class="pdTable2">
+                    <table>
+                        <tr>
+                            <td> Care Of </td>
+    
+                            <td>
+                                <label for="PA"> Parents </label>
+                                <input type="radio" name="CO">
+                
+                                <label for="GR"> Guardian </label>
+                                <input type="radio" name="CO">
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td> Mother's Name </td>
+    
+                            <td>
+                                <select name="MON">
+                                    <option value=""> Mrs. </option>
+                                </select>
+    
+                                <input type="text">
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td> Date of Birth </td>
+    
+                            <td>
+                                <input type="date" name="dob">
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td> Category </td>
+    
+                            <td>
+                                <select name="MS">
+                                    <option value=""> --Select-- </option>
+                                    <option value=""> General </option>
+                                    <option value=""> MBC </option>
+                                    <option value=""> OBC </option>
+                                    <option value=""> Others </option>
+                                </select>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td> Ex-Serviceman </td>
+    
+                            <td>
+                                <label for="SN">No</label>
+                                <input type="radio" name="E_Y/N">
+                
+                                <label for="SY">Yes</label>
+                                <input type="radio" name="E_Y/N">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </fieldset>
+            <!-- <br> <br> <br> -->
+        </div>
+
+        <!--Contact Details-->
+        <div class="CD">
+                <fieldset>
+                    <legend> <b> Contact Details &nbsp; </b></legend>
+                    <div class="cdTable1">
+                        <table>
+                            <tr>
+                                <td> Mobile Number </td>
+                                <td>
+                                    <input type="text" name="MN">
+                                </td>
+                            </tr>
+    
+                            <tr>
+                                <td> Address Line 1 </td>
+                                <td>
+                                    <input type="text" name="AL1">
+                                </td>
+                            </tr>
+    
+                            <tr>
+                                <td> City </td>
+                                <td>
+                                    <input type="text" name="CI">
+                                </td>
+                            </tr>
+    
+                            <tr>
+                                <td> Pincode </td>
+                                <td>
+                                    <input type="text" name="CI">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="cdTable2">
+                        <table>
+                            <tr>
+                                <td> Email ID </td>
+                                <td>
+                                    <input type="text" name="EID">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td> Address Line 2 </td>
+                                <td>
+                                    <input type="text" name="AL2">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td> State </td>
+                                <td>
+                                    <select name="ST">
+                                        <option value=""> --Select--</option>
+                                        <option value=""> Tamil Nadu</option>
+                                        <option value=""> Kerla</option>
+                                        <option value="">  Karnataka</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </fieldset>
+        </div>
+
+        <!--Qualification Details-->
+        <div class="QD">
+                <fieldset>
+                    <legend> <b> Qualification Details &nbsp;  </b></legend>
+                    <div class="qdTable1">
+                        <table>
+                            <tr style="font-weight: bold;">
+                                <td> Sr No. </td> 
+                                <td> Qualification </td> 
+                                <td> Board/University </td> 
+                                <td> Passing Year </td> 
+                                <td> Max Marks </td> 
+                                <td> Marks Obtain </td> 
+                                <td> Percentage </td>
+                            </tr>
+
+                            <tr>
+                                <td> 1 </td>
+                                <td> 
+                                    <select name="" id="">
+                                        <option value=""> --Select-- </option>
+                                        <option value=""> SSLC </option>
+                                        <option value=""> HSC</option>
+                                        <option value=""> B.E </option>
+                                        <option value=""> M.E </option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="text" name="" id="" size="20">
+                                </td>
+
+                                <td>
+                                    <input type="text" name="" id="" size="5">
+                                </td>
+
+                                <td>
+                                    <input type="text" name="" id="" size="5">
+                                </td>
+
+                                <td>
+                                    <input type="text" name="" id="" size="5">
+                                </td>
+
+                                <td>
+                                    <input type="text" name="" id="" size="5">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td> 2 </td>
+                                <td> 
+                                    <select name="" id="">
+                                        <option value=""> --Select-- </option>
+                                        <option value=""> SSLC </option>
+                                        <option value=""> HSC</option>
+                                        <option value=""> B.E </option>
+                                        <option value=""> M.E </option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="text" name="" id="" size="20">
+                                </td>
+
+                                <td>
+                                    <input type="text" name="" id="" size="5">
+                                </td>
+
+                                <td>
+                                    <input type="text" name="" id="" size="5">
+                                </td>
+
+                                <td>
+                                    <input type="text" name="" id="" size="5">
+                                </td>
+
+                                <td>
+                                    <input type="text" name="" id="" size="5">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td> 3 </td>
+                                <td> 
+                                    <select name="" id="">
+                                        <option value=""> --Select-- </option>
+                                        <option value=""> SSLC </option>
+                                        <option value=""> HSC</option>
+                                        <option value=""> B.E </option>
+                                        <option value=""> M.E </option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="text" name="" id="" size="20">
+                                </td>
+
+                                <td>
+                                    <input type="text" name="" id="" size="5">
+                                </td>
+
+                                <td>
+                                    <input type="text" name="" id="" size="5">
+                                </td>
+
+                                <td>
+                                    <input type="text" name="" id="" size="5">
+                                </td>
+
+                                <td>
+                                    <input type="text" name="" id="" size="5">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td> 4 </td>
+                                <td> 
+                                    <select name="" id="">
+                                        <option value=""> --Select-- </option>
+                                        <option value=""> SSLC </option>
+                                        <option value=""> HSC</option>
+                                        <option value=""> B.E </option>
+                                        <option value=""> M.E </option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="text" name="" id="" size="20">
+                                </td>
+
+                                <td>
+                                    <input type="text" name="" id="" size="5">
+                                </td>
+
+                                <td>
+                                    <input type="text" name="" id="" size="5">
+                                </td>
+
+                                <td>
+                                    <input type="text" name="" id="" size="5">
+                                </td>
+
+                                <td>
+                                    <input type="text" name="" id="" size="5">
+                                </td>
+                            </tr>
+                            
+                        </table>
+                    </div>
+                </fieldset>
+        </div>
+
+        <!--Language Knowledge-->
+        <div class="LK">
+            <fieldset>
+                <legend> <b> Language Knowledge </b> &nbsp; </legend>
+                <div class="lkTable1">
+                        <table>
+                            <tr style="text-align: center; font-weight: bold">
+                                <td> Language </td>
+                                <td> Reading </td>
+                                <td> Writing </td>
+                                <td> Spoken </td>
+                            </tr>
+
+                            <tr>
+                                <td> Hindi </td>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td> English </td>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td> Urdu </td>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                            </tr>
+                        </table>
+                </div>
+            </fieldset>
+        </div>
+
+        <!--Identification Details-->
+        <div class="ID">
+            <fieldset>
+                <legend> <b> Identification Details &nbsp; </b> </legend>
+                <div class="idTable1">
+                    <table>
+                        <tr>
+                            <td> Aadhar Card Number</td>
+                            <td>
+                                <input type="text" name="" id="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td> Upload Photo </td>
+                            <td>
+                                <input type="file">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="idTable2">
+                    <table>
+                        <tr>
+                            <td> PAN Card Number </td>
+                            <td> 
+                                <input type="text">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td> Upload Signature </td>
+                            <td>
+                                <input type="file">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </fieldset>
+        </div>
+
+        <br> <br>
+        <!--submit & back-->
+        <div class="SaB">
+            <input type="submit" name="" value="submit"  onclick="myClickSubmit()"> &nbsp; &nbsp;
+            <input type="button" name="" value="Back">
+        </div>
+
+        <script>
+            function myClickSubmit(){
+                if(confirm("Are you sure to give all the details?")==true){
+                    alert("Submitted")
+                }
+                else{
+                    alert('Not submitted');
+                }
+            }
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--Set the Images on the container, with some particular time interval 
+    the images are continuously displayed in a container. (using setTimeout function display it)-->
+
+<html>
+    <head>
+        <title> Image with setTimeout</title>
+        <style>
+            body{
+                background-color: darkturquoise;
+            }
+            img{
+                height: 500px;
+                width: 500px;
+                border-radius: 50%;
+                margin-top: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <div>
+                <img id="mainImage" src="foodIcon1.png">
+            </div>
+        </center>
+
+        <script>
+            var myImage = document.getElementById("mainImage");
+
+            var imageArray = ["art1.jpg","art2.jpg","art3.jpg"];
+
+            var imageIndex = 0;
+
+            function changeImage() 
+            {
+                myImage.setAttribute("src",imageArray[imageIndex]);
+                imageIndex++;
+                if (imageIndex >= imageArray.length) 
+                {
+                    imageIndex = 0;
+                }
+            }
+
+            setInterval(changeImage,2000);
+        </script>
+    </body>
+</html>

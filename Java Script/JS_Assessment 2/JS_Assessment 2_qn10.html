@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<!--Design a Web page, when a mouse move on a image box its images should be changed, 
+    when a mouse is move on a content, its background color should be changed, 
+    and when you click the button the content should be dislayed as well as hide when mouse out.-->
+
+<html>
+    <head>
+
+        <title> onmousemove changes </title>
+        <style>
+            body{
+                background-color: darksalmon;
+            }
+        </style>
+    </head>
+
+    <body>
+        <center>
+            <div>
+                <h1 onmousemove="changeBgColor(this,'red')" onmouseout="changeBgColor(this,'skyblue')"> Welcome to Art </h1>
+            </div>
+            <div>
+                <img src="art3.jpg" id="img1" height="400px" width="400px" onmousemove="setNewImg()" onmouseout="setOldImg()" 
+                style="border-radius: 20%;">
+            </div>  <br> <br>
+
+            <button onclick="showSix()" onmouseout="showSix()"> Click Me!!</button>
+            <h4 id="six" visibility:hidden;"> You cliked </h4>
+
+        </center>
+
+        
+
+        <script>
+            function setNewImg()
+            {
+                document.getElementById("img1").src = "art2.jpg";
+            }
+
+            function setOldImg()
+            {
+                document.getElementById("img1").src = "art3.jpg";
+            }
+
+            function changeBgColor(obj,colorName)
+            {
+                obj.style.backgroundColor=colorName;
+            }
+
+            function showSix()
+            {
+                var element = document.getElementById('six');
+                if(element.style.visibility=='hidden')
+                element.style.visibility= 'visible';
+                else
+                element.style.visibility='hidden';
+            }
+            
+        </script>
+    </body>
+</html>

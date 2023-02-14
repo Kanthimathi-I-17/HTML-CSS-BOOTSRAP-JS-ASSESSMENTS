@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<style>
+#myContainer {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  margin-left: 500px;
+}
+#myAnimation {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+#myAni {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+</style>
+<body>
+
+<p>
+<button onclick="myMove()">Click Me</button> 
+</p>
+
+<div id ="myContainer">
+<div>
+    <img id ="myAnimation" src="art2.jpg">
+</div>
+</div>
+
+<script>
+var id = null;
+function myMove() {
+  var elem = document.getElementById("myAnimation");   
+  var pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 10);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.top = pos + 'px'; 
+      elem.style.bottom = pos + 'px'; 
+    }
+  }
+}
+</script>
+<p>
+    <button onclick="myMo()">Click Me</button> 
+    </p>
+    
+    <div id ="myContainer">
+    <div>
+        <img id ="myAni" src="art1.jpg">
+    </div>
+    </div>
+    
+    <script>
+    var id = null;
+    function myMo() {
+      var elem = document.getElementById("myAni");   
+      var pos = 0;
+      clearInterval(id);
+      id = setInterval(frame, 10);
+      function frame() {
+        if (pos == 350) {
+          clearInterval(id);
+        } else {
+          pos++; 
+          elem.style.left= pos + 'px'; 
+          elem.style.right= pos + 'px'; 
+        }
+      }
+    }
+    </script>
+
+</body>
+</html>

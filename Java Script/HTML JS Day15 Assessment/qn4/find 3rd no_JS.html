@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--4. Write a JavaScript program to check a number from three given numbers where two numbers are equal, 
+    find the third one.-->
+<html>
+    <head>
+        <title> Find Third Number</title>
+    </head>
+    <body>
+        <script>
+            function unique_number(x, y, z) 
+            {
+                if((x!==y) && (x!==z) && (y!==z))
+                    return "All are unique numbers in: " + x + "," + y + "," + z;
+                if(x==y) 
+                    return "The unique number in "+ x + "," + y + "," + z + " is: " + z;
+                if(x==z) 
+                    return "The unique number in "+ x + "," + y + "," + z + " is: " + y;
+                return "The unique number in "+ x + "," + y + "," + z + " is: " +  x;
+            }
+
+            document.write("<br><br>"+ unique_number(7,7,9)+"<br><br>") 
+            document.write(unique_number(10,89,56)+"<br><br>")
+            document.write(unique_number(1000,98,1000)+"<br><br>")
+            document.write(unique_number(17,90,90)+"<br>")
+
+        </script>
+    </body>
+</html>

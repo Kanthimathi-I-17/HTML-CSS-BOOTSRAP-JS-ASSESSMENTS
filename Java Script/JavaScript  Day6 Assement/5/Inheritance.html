@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<!--Create another class called Empsalary, the base class is Employee. 
+    Inherit the values Dept, Designation for calculating the salary from the base class.-->
+
+<html>
+    <head>
+        <title> Inheritance </title>
+    </head>
+    <body>
+        <p id="empSAL"></p>
+        <script>
+            class Employee{
+                constructor(dept,desgination){
+                    this.dept1=dept;
+                    this.desgination1=desgination;
+                }
+                display(){
+                    return 'Department: ' + this.dept1 + '<br>'+'Designation: ' + this.desgination1 +"<br>";
+                }
+            }
+
+            class Empsalary extends Employee{
+                constructor(dept,desgination,sal){
+                    super(dept,desgination);
+                    this.salary1=sal;
+                }
+                show(){
+                    return this.display() + 'Salary: ' + this.salary1;
+                }
+            }
+            let salary=new Empsalary("Developer","Design",79000);
+            document.getElementById("empSAL").innerHTML = salary.show();
+        </script>
+    </body>
+</html>

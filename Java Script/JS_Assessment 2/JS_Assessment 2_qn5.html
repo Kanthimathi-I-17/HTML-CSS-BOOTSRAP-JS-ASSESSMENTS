@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<!-- 5. In a User Application Form when you enter the value in the textbox, 
+    when you press the key on the Keyboard, the text box background color should be changed from default.-->
+
+<html>
+    <head>
+        <title> Textbox bg change </title>
+        <style>
+            body{
+                background-color: khaki;
+            }
+        </style>
+    </head>
+    <body>
+        <label for="">Enter your Name: &nbsp; &nbsp;</label>
+        <input type="text" id="demo" onkeydown="keydownFunction()" onkeyup="keyupFunction()">
+
+        <script>
+            function keydownFunction() {
+            document.getElementById("demo").style.backgroundColor = "skyblue";
+            }
+
+            function keyupFunction() {
+            document.getElementById("demo").style.backgroundColor = "white";
+            }
+        </script>
+    </body>
+</html>

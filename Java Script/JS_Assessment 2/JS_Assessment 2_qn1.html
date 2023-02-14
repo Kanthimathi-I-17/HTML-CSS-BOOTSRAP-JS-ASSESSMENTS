@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--To Design the Nav menus, when mouse move on the nav menus its color should be changed from the default color.-->
+
+<html>
+    <head>
+        <title> Responsive Navigation Menu </title>
+
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+            rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+                crossorigin="anonymous">
+        </script>
+        
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+                integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"crossorigin="anonymous">
+        </script>
+
+        
+
+    </head>
+    <body>
+
+        <script>
+            
+            function changeBgColor(obj,colorName)
+            {
+                obj.style.backgroundColor=colorName;
+            }
+        </script>
+
+
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top  shadow">
+            <a class="navbar-brand" href="#">
+                <!-- Add logo with size of 90*80 -->
+                <img src="foodIcon1.png" width="90" height="80" alt="" style="border-radius: 10px;">
+            </a>
+
+            <h1><b>HS Restaurant</b></h1>
+
+            <button class="navbar-toggler" type="button"
+                data-toggle="collapse" 
+                data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+                  
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active" onmousemove="changeBgColor(this,'red')" onmouseout="changeBgColor(this,'white')">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" onmousemove="changeBgColor(this,'skyblue')" onmouseout="changeBgColor(this,'white')">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item" onmousemove="changeBgColor(this,'skyblue')" onmouseout="changeBgColor(this,'white')">
+                        <a class="nav-link" href="#">Menus</a>
+                    </li>
+                    <li class="nav-item" onmousemove="changeBgColor(this,'skyblue')" onmouseout="changeBgColor(this,'white')">
+                        <a class="nav-link" href="#">Orders</a>
+                    </li>
+                    <li class="nav-item" onmousemove="changeBgColor(this,'skyblue')" onmouseout="changeBgColor(this,'white')">
+                        <a class="nav-link" href="BS qn1 news.html" target="_self">News</a>
+                    </li>
+                    <li class="nav-item" onmousemove="changeBgColor(this,'skyblue')" onmouseout="changeBgColor(this,'white')">
+                        <a class="nav-link" href="BS openings.html" target="_self">Openings</a>
+                    </li>
+                    <li class="nav-item" onmousemove="changeBgColor(this,'skyblue')" onmouseout="changeBgColor(this,'white')">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <br> <br> <br> <br> <br>
+        <div class="container-fluid bg-light p-3">
+            <p>
+                <b>Restaurant</b>, establishment where refreshments or meals may be procured by the public. The public dining room that ultimately came to be known as the restaurant originated in France, and the French have continued to make major contributions to the restaurant’s development.
+
+                A look at France's historic restaurant culture and what sets its cuisine apart from the rest of the world
+                A look at France's historic restaurant culture and what sets its cuisine apart from the rest of the worldSee all videos for this article
+                The first restaurant proprietor is believed to have been one A. Boulanger, a soup vendor, who opened his business in Paris in 1765. The sign above his door advertised restoratives, or restaurants, referring to the soups and broths available within. The institution took its name from that sign, and restaurant now denotes a public eating place in English, French, Dutch, Danish, Norwegian, Romanian, and many other languages, with some variations. For example, in Spanish and Portuguese the word becomes restaurante, in Italian it is ristorante, in Swedish restaurang, in Russian restoran, and in Polish restauracia.
+
+                Although inns and hostelries often served paying guests meals from the host’s table, or table d’hôte, and beverages were sold in cafés, Boulanger’s restaurant was probably the first public place where any diner might order a meal from a menu offering a choice of dishes.
+
+
+                Boulanger operated a modest establishment; it was not until 1782 that La Grande Taverne de Londres, the first luxury restaurant, was founded in Paris. The owner, Antoine Beauvilliers, a leading culinary writer and gastronomic authority, later wrote L’Art du cuisinier (1814), a cookbook that became a standard work on French culinary art. Beauvilliers achieved a reputation as an accomplished restaurateur and host, and the French aphorist and gastronomic chronicler Jean-Athelme Brillat-Savarin, a frequent guest, credited Beauvilliers with being
+
+                the first to combine the four essentials of an elegant room, smart waiters, a choice cellar, and superior cooking.
+
+                Brillat-Savarin also noted that Beauvilliers would
+
+                Get a Britannica Premium subscription and gain access to exclusive content.
+                Subscribe Now
+                point out here a dish to be avoided, there one to be ordered instantly…; and send, at the same time, for wine from the cellar, the key of which he produced from his own pocket; in a word, he assumed so gracious and engaging a tone, that all these extra articles seemed so many favours conferred by him.
+
+                
+            </p>
+        </div>
+    </body>
+</html>
